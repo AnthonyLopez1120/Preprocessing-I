@@ -134,9 +134,13 @@ html,
 body {
   height: 100%;
 }
+/***VARIBLE STYLES**/
 h1 {
   font-family: 'Shadows Into Light', cursive;
   font-size: 2.5rem;
+}
+h2 {
+  font-size: 1.5rem;
 }
 .wrapper {
   border: solid red;
@@ -144,10 +148,23 @@ h1 {
   height: 100%;
   width: 100%;
 }
+header {
+  display: flex;
+  justify-content: flex-end;
+  border: solid red;
+  margin: 3% 0;
+}
+header nav {
+  display: flex;
+}
+header a {
+  justify-content: space-between;
+  border: solid green;
+  text-decoration: none;
+}
 .top-container {
   width: 100%;
   height: 50%;
-  border: solid blue;
   display: flex;
   flex-direction: column;
 }
@@ -155,8 +172,61 @@ h1 {
   width: auto;
   height: 75%;
   border: green solid;
+  display: flex;
 }
 .top-container .image img {
   height: 300px;
   width: auto;
+}
+.top-container .image h1 {
+  justify-content: center;
+  border: solid purple;
+  text-align: center;
+}
+.intro {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  border: yellow solid;
+}
+.intro h2 {
+  margin: 2%;
+}
+.intro p {
+  margin: 2%;
+}
+.intro button {
+  display: flex;
+  width: 50%;
+  height: 50%;
+  text-align: center;
+}
+.bio-skills {
+  border: solid black;
+  margin-top: 2%;
+  display: flex;
+  justify-content: space-between;
+  height: 25%;
+}
+.bio-skills .left-side {
+  border: blue dotted;
+  width: 25%;
+}
+.bio-skills h2 {
+  text-align: center;
+}
+.bio-skills .right-side {
+  border: red dotted;
+}
+.bio-skills h2 {
+  text-align: center;
+}
+.bio-skills p {
+  align-content: space-around;
+  border: grey solid 1px;
+  text-align: center;
+}
+.bottom-section {
+  margin-top: 2%;
+  border: solid orange;
 }

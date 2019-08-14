@@ -59,11 +59,23 @@ html, body {
     height: 100%;
 }
 
+.section-style(){
+	text-decoration: bold;
+
+}
+/***VARIBLE STYLES**/
+@titles-spacing:2%;
+@box-spacing:2%;
+
+
 h1{
 	font-family: 'Shadows Into Light', cursive;
 	font-size:2.5rem;
 }
 
+h2{
+	font-size:1.5rem;
+}
 
 .wrapper{
 	border:solid red;
@@ -72,10 +84,28 @@ h1{
 	width:100%;
 }
 
+header{
+	display: flex;
+	justify-content: flex-end;
+	border:solid red;
+	margin:3% 0;
+		nav{
+			display: flex;
+		} 
+			
+			a{
+			
+			justify-content: space-between;
+			border:solid green;
+			
+			text-decoration: none;
+			}
+}
+
 .top-container{
 	width:100%;
 	height:50%;
-	border:solid blue;
+	
 	display:flex;
 	flex-direction: column;
 
@@ -83,12 +113,71 @@ h1{
 		width:auto;
 		height:75%;
 		border:green solid;
+		display: flex;
 		img{
 			height:300px;
 			width: auto;
 		}
+	h1{
+		justify-content: center;
+		border:solid purple;
+		text-align: center;
+	}
 	}
 	
 }
 
+.intro{
+	width:40%;
+	display:flex;
+	flex-direction: column;
+	border:yellow solid;
+		h2{
+			margin:@titles-spacing
+		}
+	p{
+		margin:@titles-spacing
+	}	
+	button{
+		display:flex;
+		width:50%;
+		height:50%;
+		text-align: center;	
+	}
+}
 
+.bio-skills{
+	border:solid black;
+	margin-top:@box-spacing;
+	display:flex;
+	justify-content: space-between;
+	height:25%;
+		.left-side{
+			border:blue dotted;
+			width:25%;
+		}
+			h2{
+				text-align: center;
+			}
+		.right-side{
+			border:red dotted;
+			
+
+		}
+			h2{
+				text-align: center;
+			}
+				p{
+					align-content: space-around;
+					border:grey solid 1px;
+					text-align: center;
+				}
+
+}
+
+
+
+.bottom-section{
+	margin-top:@box-spacing;
+	border:solid orange;
+}
