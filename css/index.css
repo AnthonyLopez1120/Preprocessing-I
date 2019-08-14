@@ -180,7 +180,6 @@ header a {
 }
 .top-container .image h1 {
   justify-content: center;
-  border: solid purple;
   text-align: center;
 }
 .intro {
@@ -190,6 +189,7 @@ header a {
   border: yellow solid;
 }
 .intro h2 {
+  text-align: center;
   margin: 2%;
 }
 .intro p {
@@ -206,7 +206,7 @@ header a {
   margin-top: 2%;
   display: flex;
   justify-content: space-between;
-  height: 25%;
+  height: 40%;
 }
 .bio-skills .left-side {
   border: blue dotted;
