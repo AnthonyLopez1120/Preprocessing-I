@@ -30,7 +30,7 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-
+	background:azure;
 	line-height: 1;
 	
 }
@@ -67,6 +67,13 @@ html, body {
 @titles-spacing:2%;
 @box-spacing:2%;
 
+/********MIX INS**********/
+
+.flex-box(){
+	display:flex;
+	justify-content: center;
+}
+
 
 h1{
 	font-family: 'Shadows Into Light', cursive;
@@ -79,78 +86,59 @@ h2{
 }
 
 .wrapper{
-	border:solid red;
-	padding:0 15px;
+	padding:0 15%;
 	height:100%;
 	width:100%;
 }
 
 header{
-	display: flex;
-	justify-content: flex-end;
-	border:solid red;
-	margin:3% 0;
+		margin:3% 0;
+		
 		nav{
-			display: flex;
+			.flex-box();
+			justify-content: space-around;
 		} 
 			
-			a{
-			
-			justify-content: space-between;
-			border:solid green;
-			
+		a{
 			text-decoration: none;
+			color:black;
 			}
 }
 
 .top-container{
+	background:beige;
 	width:100%;
 	height:50%;
-	
 	display:flex;
 	flex-direction: column;
+	
 
 	.image{
-		width:auto;
-		height:75%;
-		border:green solid;
+	
+		width:100%;
+		height:100%;
 		display: flex;
-		img{
-			height:300px;
-			width: auto;
+			img{
+				height:100%;
+				width: auto;
 		}
+
 	h1{
-		justify-content: center;
+
 		text-align: center;
-
-
+		justify-items: center;
+		padding-top:20%;
+		height:100%;
+		width:100%;
 	}
+}
+
+
 
 	
-}
-
-.intro{
-	width:40%;
-	display:flex;
-	flex-direction: column;
-	border:yellow solid;
-		h2{
-			text-align: center;
-			margin:@titles-spacing
-		}
-	p{
-		margin:@titles-spacing
-	}	
-	button{
-		display:flex;
-		width:50%;
-		height:50%;
-		text-align: center;	
-	}
-}
-
 .bio-skills{
-	border:solid black;
+	background:black;
+	border:dashed black;
 	margin-top:@box-spacing;
 	display:flex;
 	justify-content: space-between;
@@ -184,4 +172,4 @@ header{
 	margin-top:@box-spacing;
 	border:solid orange;
 }
-
+}

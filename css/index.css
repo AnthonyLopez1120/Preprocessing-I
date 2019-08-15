@@ -105,6 +105,7 @@ section {
   display: block;
 }
 body {
+  background: azure;
   line-height: 1;
 }
 ol,
@@ -135,6 +136,7 @@ body {
   height: 100%;
 }
 /***VARIBLE STYLES**/
+/********MIX INS**********/
 h1 {
   font-family: 'Shadows Into Light', cursive;
   font-size: 2.5rem;
@@ -143,90 +145,72 @@ h2 {
   font-size: 1.5rem;
 }
 .wrapper {
-  border: solid red;
-  padding: 0 15px;
+  padding: 0 15%;
   height: 100%;
   width: 100%;
 }
 header {
-  display: flex;
-  justify-content: flex-end;
-  border: solid red;
   margin: 3% 0;
 }
 header nav {
   display: flex;
+  justify-content: center;
+  justify-content: space-around;
 }
 header a {
-  justify-content: space-between;
-  border: solid green;
   text-decoration: none;
+  color: black;
 }
 .top-container {
+  background: beige;
   width: 100%;
   height: 50%;
   display: flex;
   flex-direction: column;
 }
 .top-container .image {
-  width: auto;
-  height: 75%;
-  border: green solid;
+  width: 100%;
+  height: 100%;
   display: flex;
 }
 .top-container .image img {
-  height: 300px;
+  height: 100%;
   width: auto;
 }
 .top-container .image h1 {
-  justify-content: center;
   text-align: center;
+  justify-items: center;
+  padding-top: 20%;
+  height: 100%;
+  width: 100%;
 }
-.intro {
-  width: 40%;
-  display: flex;
-  flex-direction: column;
-  border: yellow solid;
-}
-.intro h2 {
-  text-align: center;
-  margin: 2%;
-}
-.intro p {
-  margin: 2%;
-}
-.intro button {
-  display: flex;
-  width: 50%;
-  height: 50%;
-  text-align: center;
-}
-.bio-skills {
-  border: solid black;
+.top-container .bio-skills {
+  background: black;
+  border: dashed black;
   margin-top: 2%;
   display: flex;
   justify-content: space-between;
   height: 40%;
 }
-.bio-skills .left-side {
+.top-container .bio-skills .left-side {
   border: blue dotted;
   width: 25%;
 }
-.bio-skills h2 {
+.top-container .bio-skills h2 {
   text-align: center;
 }
-.bio-skills .right-side {
+.top-container .bio-skills .right-side {
   border: red dotted;
 }
-.bio-skills h2 {
+.top-container .bio-skills h2 {
   text-align: center;
 }
-.bio-skills p {
+.top-container .bio-skills p {
   align-content: space-around;
   border: grey solid 1px;
   text-align: center;
 }
-.bottom-section {
+.top-container .bottom-section {
   margin-top: 2%;
   border: solid orange;
 }
