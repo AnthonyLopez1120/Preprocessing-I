@@ -68,7 +68,7 @@ html, body {
 *************************************************/
 .box(){
 	display:flex;
-	justify-content: space-around;
+	justify-content: space-between;
 	align-items: center;
 }
 // .titles{
@@ -107,4 +107,51 @@ nav{
 			width:100%;
 		}
 }
+
+
+.top-container{
+	background:#5a7da5;
+	padding:.5% 2%;
+
+	.sign-up{
+		border-top:1px black solid;
+	}
+
+	h1, h2, p{
+		margin:.5% 0%;
+	}
+}
+
+.mid-section{
+	.box();
+	margin-top: .5%;
+
+		.summary, .right-box{
+			width:48%;
+		}
+		.right-box{
+			text-align: center;
+			border:black solid 1px;
+
+				h2, p{
+					border:solid black .5px;
+					padding:.5% 0%;
+				}
+		}
+}
+
+.bottom-secton{
+	margin-top:.5%;
+		
+}
+
+table{
+	width:100%;
+}
+
+table, th, td {
+	border: 1px solid black;
+	text-align: center;
+  }
+
 

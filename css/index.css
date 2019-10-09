@@ -148,7 +148,7 @@ body {
 }
 nav {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 nav a {
@@ -166,4 +166,47 @@ nav a {
 .imgCont img {
   height: 100%;
   width: 100%;
+}
+.top-container {
+  background: #5a7da5;
+  padding: 0.5% 2%;
+}
+.top-container .sign-up {
+  border-top: 1px black solid;
+}
+.top-container h1,
+.top-container h2,
+.top-container p {
+  margin: 0.5% 0%;
+}
+.mid-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0.5%;
+}
+.mid-section .summary,
+.mid-section .right-box {
+  width: 48%;
+}
+.mid-section .right-box {
+  text-align: center;
+  border: black solid 1px;
+}
+.mid-section .right-box h2,
+.mid-section .right-box p {
+  border: solid black 0.5px;
+  padding: 0.5% 0%;
+}
+.bottom-secton {
+  margin-top: 0.5%;
+}
+table {
+  width: 100%;
+}
+table,
+th,
+td {
+  border: 1px solid black;
+  text-align: center;
 }
