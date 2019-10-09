@@ -134,6 +134,31 @@ html,
 body {
   height: 100%;
 }
+/*************************************************
+			VARIABLES
+*************************************************/
+/*************************************************
+			MIX-INS
+*************************************************/
+/*************************************************
+			BEGINNING MY CSS STYLES
+*************************************************/
+.wrapper {
+  padding: 2% 10%;
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+nav a {
+  text-decoration: none;
+  color: black;
+  border-left: 1px grey solid;
+  border-right: 1px grey solid;
+  padding: 0% 5%;
+  margin-bottom: 5%;
+}
 .imgCont {
   height: 25%;
   width: 25%;
