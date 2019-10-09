@@ -1,1 +1,303 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+/*************************************************
+			FONT & SIZING
+*************************************************/
+html {
+  font-size: 62.5%;
+}
+nav {
+  font-family: 'Notable', sans-serif;
+  font-size: 1.6rem;
+}
+h1 {
+  font-family: 'Notable', sans-serif;
+  font-size: 2.6rem;
+}
+h2 {
+  font-size: 1.8rem;
+  font-family: 'Notable', sans-serif;
+  padding-top: 5%;
+}
+p {
+  font-size: 1.6rem;
+}
+th {
+  font-size: 1.6rem;
+}
+td {
+  font-size: 1.4rem;
+}
+address {
+  font-size: 1.4rem;
+}
+.cw p {
+  font-size: 1rem;
+}
+/*************************************************
+			VARIABLES
+*************************************************/
+/*************************************************
+			MIX-INS
+*************************************************/
+/*************************************************
+			BEGINNING MY CSS STYLES
+*************************************************/
+body {
+  background: #F0EAD6;
+}
+.wrapper {
+  padding: 2% 10%;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav a {
+  text-decoration: none;
+  color: black;
+  border-left: 1px grey solid;
+  border-right: 1px grey solid;
+  padding: 0% 5%;
+  margin-bottom: 5%;
+}
+@media (max-width: 500px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.imgCont {
+  height: 25%;
+  width: 25%;
+}
+.imgCont img {
+  height: 100%;
+  width: 100%;
+}
+@media (max-width: 500px) {
+  .imgCont {
+    display: none;
+  }
+}
+.top-container {
+  background: #F5F5DC;
+  padding: 0.5% 2%;
+}
+.top-container .sign-up {
+  border-top: 1px lightgray solid;
+}
+.top-container h1,
+.top-container h2,
+.top-container p {
+  margin: 0.5% 0%;
+}
+.mid-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0.5%;
+}
+.mid-section .summary,
+.mid-section .right-box {
+  width: 48%;
+}
+.mid-section .right-box {
+  text-align: center;
+  border: black solid 1px;
+}
+@media (max-width: 500px) {
+  .mid-section .right-box {
+    border: none;
+  }
+}
+.mid-section .right-box h2,
+.mid-section .right-box p {
+  border: solid black 0.5px;
+  padding: 0.5% 0%;
+}
+@media (max-width: 500px) {
+  .mid-section .right-box h2,
+  .mid-section .right-box p {
+    border: none;
+  }
+}
+@media (max-width: 500px) {
+  .mid-section {
+    display: flex;
+    flex-direction: column;
+  }
+  .mid-section .summary,
+  .mid-section .right-box {
+    width: 100%;
+  }
+}
+.bottom-secton {
+  margin-top: 0.5%;
+}
+table {
+  margin-top: 2%;
+  width: 100%;
+}
+table,
+th,
+td {
+  border: 1px solid black;
+  text-align: center;
+}
+.cw {
+  width: 100%;
+  text-align: center;
+}
+/*
+spacing for mobile
+*/
+@media (max-width: 500px) {
+  div,
+  h1,
+  h2,
+  p,
+  table {
+    margin: 10% 0%;
+  }
+}
+@media (max-width: 500px) {
+  * {
+    text-align: center;
+  }
+}
